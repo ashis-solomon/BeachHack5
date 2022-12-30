@@ -44,6 +44,10 @@ Database - Sqlite
 ```
 <br />
 
+## ` PRESENTATION LINK : `
+https://www.canva.com/design/DAFWNvZ3P9Y/3mmGPJR6Z3m-kx-DfpMNug/view?utm_content=DAFWNvZ3P9Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+<br /><br />
+
 ## ` REFERENCES : `
 
 The Dataset was compiled using the fishwatch website (https://www.fishwatch.gov/developers)
