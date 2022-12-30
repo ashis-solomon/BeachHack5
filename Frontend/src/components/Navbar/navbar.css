@@ -139,6 +139,11 @@
     margin-right: 1rem;
     font-size: 2rem;
   }
+
+
+  .button.style_1:hover{
+    color: #fff;
+  }
   .button_flex
   {
     display: flex;

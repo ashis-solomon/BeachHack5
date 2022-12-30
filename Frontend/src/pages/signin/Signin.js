@@ -49,41 +49,51 @@ const Signin = () => {
 
 
 
-
-
-  return (
+  if(localStorage.getItem('token')!=null){
+    if(localStorage.getItem('type')==0){
+      window.location.href = '/FishermanLanding'
+    }
+    else{
+      window.location.href = '/userlanding'
+    }
+  }
+  else{
+    return (
     
-    <div>
-    <div className="login-signup l-attop" id="signup">
-  <div className="login-signup-title">
-    LOG IN
+      <div>
+      <div className="login-signup l-attop" id="signup">
+    <div className="login-signup-title">
+      LOG IN
+    </div>
+    <div className="login-signup-content">
+      <div className="input-name">
+        <h2>Username</h2>
+  
+      </div>
+      <input type="text" name="username" onChange={addData} value={logdata.username} className="field-input" />
+      <div className="input-name input-margin">
+        <h2>Password</h2>
+  
+      </div>
+      <input type="password" name="password" onChange={addData} value={logdata.password} className="field-input" />
+      <div className="input-r">
+  
+  
+      </div>
+      <button className="submit-btn" onClick={()=>{
+          login();
+      }}>
+            Enter
+          </button>
+  
+  
+    </div>
   </div>
-  <div className="login-signup-content">
-    <div className="input-name">
-      <h2>Username</h2>
-
-    </div>
-    <input type="text" name="username" onChange={addData} value={logdata.username} className="field-input" />
-    <div className="input-name input-margin">
-      <h2>Password</h2>
-
-    </div>
-    <input type="password" name="password" onChange={addData} value={logdata.password} className="field-input" />
-    <div className="input-r">
-
-
-    </div>
-    <button className="submit-btn" onClick={()=>{
-        login();
-    }}>
-          Enter
-        </button>
-
-
   </div>
-</div>
-</div>
-  )
+    )
+  }
+
+ 
 }
 
 

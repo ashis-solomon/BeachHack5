@@ -11,6 +11,7 @@ const Navbar = () => {
           <div className='flex-nav'>
             <h1 className='nav-text'>FISHNET</h1>
             <div className='button_flex'>
+            <button className="button style_1"onClick={() => { if(localStorage.getItem('type')==0){window.location.href='/FishermanLanding'}else{window.location.href='/userlanding'}}}>Landing</button>
             <button className="button style_1"onClick={() => { window.location.href = '/predict'; }}>Predict</button>
             <button class="button style_1"  onClick={() => { localStorage.removeItem('token'); localStorage.removeItem('type'); window.location.href='/signin'; }}>
               Logout
